@@ -15,27 +15,6 @@ This repository contains exercises covering a wide range of DevOps topics such a
 
 ## Folder Structure
 
-Certainly, George! Below is a template for a Markdown README file for your DevOps course exercises folder:
-
-markdown
-
-# DevOps Course Exercises
-
-Welcome to the DevOps course exercises repository! Here you'll find a collection of exercises and projects designed to help you learn and practice various DevOps concepts and tools.
-
-## Table of Contents
-1. [Introduction](#introduction)
-2. [Folder Structure](#folder-structure)
-3. [How to Use](#how-to-use)
-4. [Contributing](#contributing)
-5. [License](#license)
-
-## Introduction
-
-This repository contains exercises covering a wide range of DevOps topics such as CI/CD pipelines, configuration management, infrastructure as code, containerization, orchestration, monitoring, and more. Whether you're new to DevOps or looking to expand your skills, these exercises offer hands-on experience to reinforce your learning.
-
-## Folder Structure
-
 ├── Exercise#/
 │ ├── README.md
 │ ├── code/

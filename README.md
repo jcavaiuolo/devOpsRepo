@@ -43,10 +43,6 @@ Dependiendo del desafío, es posible que necesites instalar herramientas como:
 
 Consulta el `README.md` de cada desafío para más detalles sobre sus requisitos específicos.
 
-## Contribuciones
-
-Si deseas contribuir con mejoras o nuevas prácticas, ¡toda colaboración es bienvenida! Puedes abrir un issue o enviar un pull request.
-
 ## Recursos adicionales
 
 - [Documentación oficial de Kubernetes](https://kubernetes.io/docs/)

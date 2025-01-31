@@ -1,0 +1,30 @@
+---
+- name: Instalar MySQL Server
+  apt:
+    name: mysql-server
+    state: present
+    update_cache: yes
+
+- name: Habilitar y arrancar MySQL
+  service:
+    name: mysql
+    state: started
+    enabled: yes
+
+- name: Crear base de datos de WordPress
+  mysql_db:
+    name: "wordpress_db"
+    state: present
+
+- name: Crear usuario MySQL para WordPress
+  mysql_user:
+    name: "wordpress_user"
+    password: "wordpress_pass"
+    priv: "wordpress_db.*:ALL"
+    state: present
+
+- name: arrancar MySQL
+  service:
+    name: mysql
+    state: started
+    enabled: yes

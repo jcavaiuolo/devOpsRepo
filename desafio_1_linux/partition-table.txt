@@ -1,0 +1,11 @@
+Disk /dev/sdb: 2 GiB, 2147483648 bytes, 4194304 sectors
+Disk model: QEMU HARDDISK   
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disklabel type: dos
+Disk identifier: 0xe2adfab2
+
+Device     Boot   Start     End Sectors    Size Id Type
+/dev/sdb1          2048 2095000 2092953 1021.9M 83 Linux
+/dev/sdb2       2095104 2095604     501  250.5K 82 Linux swap / Solaris

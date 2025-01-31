@@ -1,0 +1,12 @@
+services:
+  mongodb:
+    image: mongo:4.4
+    container_name: mongodb
+    ports:
+      - "27017:27017"
+
+  app:
+    image: jcavaiuolo/app:latest
+    container_name: app
+    ports:
+      - "3000:3000"

@@ -1,0 +1,44 @@
+---
+- name: apt update y upgrade
+  apt:
+    update_cache: yes
+    upgrade: dist
+    autoclean: yes
+    autoremove: yes
+
+- name: Instalar pip3
+  apt:
+    name: python3-pip
+    state: present
+
+- name: Instalar PyMySQL con pip3
+  pip:
+    name: PyMySQL
+    state: present
+    extra_args: --break-system-packages # Investigar por que necesita este argumento
+
+- name: Descargar WordPress
+  get_url:
+    url: "https://wordpress.org/latest.tar.gz"
+    dest: "/tmp/wordpress.tar.gz"
+
+- name: Extraer WordPress
+  unarchive:
+    src: "/tmp/wordpress.tar.gz"
+    dest: "/var/www/html/"
+    remote_src: yes
+
+- name: Configurar el archivo wp-config.php
+  template:
+    src: "wp-config.php.j2"
+    dest: "/var/www/html/wordpress/wp-config.php"
+  notify:
+    - Reiniciar Apache
+
+- name: Configurar Apache para servir WordPress
+  lineinfile:
+    path: /etc/apache2/sites-available/000-default.conf
+    regexp: '^DocumentRoot /var/www/html'
+    line: 'DocumentRoot /var/www/html/wordpress'
+  notify:
+    - Reiniciar Apache

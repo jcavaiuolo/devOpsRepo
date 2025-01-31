@@ -1,0 +1,13 @@
+---
+- name: Instalar PHP y dependencias
+  apt:
+    name:
+      - php
+      - php-mysql
+      - php-xml
+      - php-mbstring
+      - php-curl
+      - php-zip
+      - php-gd
+    state: present
+    update_cache: yes

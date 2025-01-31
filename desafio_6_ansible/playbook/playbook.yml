@@ -1,0 +1,10 @@
+---
+- name: Configurar servidor Linode para WordPress
+  hosts: wordpress
+  become: true
+  roles:
+    - php
+    - mysql
+    - wordpress
+
+

@@ -1,0 +1,16 @@
+
+appReplicaCount: 2
+
+appImage:
+  repository: jcavaiuolo/app
+  tag: latest
+
+serviceNodePort: 30002 # esta variable quedaria mejor en la seccion "service"
+
+mongoVersion: 4.4
+
+ingress:
+  enabled: false
+
+service:
+  type: NodePort

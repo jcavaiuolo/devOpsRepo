@@ -1,54 +1,60 @@
-# DevOps Course Exercises
+# Repositorio de Desafíos - Bootcamp DevOps Engineer
 
-Welcome to the DevOps course exercises repository! Here you'll find a collection of exercises and projects designed to help you learn and practice various DevOps concepts and tools.
+Este repositorio contiene una serie de ejercicios y desafíos realizados durante el [Bootcamp DevOps Engineer](https://www.educacionit.com/bootcamp-devops-engineer) de Educación IT. Cada desafío aborda herramientas y conceptos clave en el mundo DevOps, permitiendo desarrollar habilidades prácticas en automatización, infraestructura como código, contenedores, CI/CD y más.
 
-## Table of Contents
-1. [Introduction](#introduction)
-2. [Folder Structure](#folder-structure)
-3. [How to Use](#how-to-use)
-4. [Contributing](#contributing)
-5. [License](#license)
+## Contenido del repositorio
 
-## Introduction
+El repositorio está organizado en carpetas, cada una correspondiente a un desafío específico:
 
-This repository contains exercises covering a wide range of DevOps topics such as CI/CD pipelines, configuration management, infrastructure as code, containerization, orchestration, monitoring, and more. Whether you're new to DevOps or looking to expand your skills, these exercises offer hands-on experience to reinforce your learning.
+1. **Linux** - Comandos esenciales y scripting en Bash.
+2. **Jenkins** - Automatización de pipelines de CI/CD.
+3. **AWS CLI** - Gestión de recursos en la nube con AWS CLI.
+4. **AWS** - Implementación y configuración de servicios en AWS.
+5. **Docker** - Contenedores y administración con Docker.
+6. **Ansible** - Automatización de configuración e infraestructura como código.
+7. **Terraform** - Provisionamiento de infraestructura con Terraform.
+8. **Kubernetes** - Orquestación de contenedores con Kubernetes.
+9. **Helm** - Gestión de despliegues en Kubernetes con Helm.
+10. **ArgoCD** - GitOps y despliegues automatizados con ArgoCD.
 
-## Folder Structure
+## Cómo usar este repositorio
 
-├── Exercise#/
-│ ├── README.md
-│ ├── code/
-│ ├── instructions.md
-│ └── solution/
+Para explorar los desafíos, clona el repositorio y navega a la carpeta de interés:
 
-The folder structure is organized by exercises, each containing:
-- `README.md`: Instructions and guidance for the exercise.
-- `code/`: Starter code or scripts.
-- `instructions.md`: Detailed instructions for completing the exercise.
-- `solution/`: Solution files or reference implementations.
+```bash
+git clone https://github.com/jcavaiuolo/devOpsRepo.git
+cd devOpsRepo/desafio_X
+```
+(Sustituye `X` por el número del desafío que deseas revisar.)
 
-## How to Use
+Cada carpeta contiene un archivo `README.md` con una descripción detallada del desafío, instrucciones de ejecución y recursos adicionales.
 
-1. Clone this repository to your local machine:
+## Requisitos
 
-    ```
-    git clone https://github.com/your-username/devops-course-exercises.git
-    ```
+Dependiendo del desafío, es posible que necesites instalar herramientas como:
+- Docker y Docker Compose
+- Kubernetes y kubectl
+- Helm
+- Terraform
+- Ansible
+- Jenkins
+- AWS CLI
+- ArgoCD
 
-2. Navigate to the exercise folder you want to work on.
+Consulta el `README.md` de cada desafío para más detalles sobre sus requisitos específicos.
 
-3. Read the `README.md` file for instructions on the exercise.
+## Contribuciones
 
-4. Follow the instructions provided in the `instructions.md` file to complete the exercise.
+Si deseas contribuir con mejoras o nuevas prácticas, ¡toda colaboración es bienvenida! Puedes abrir un issue o enviar un pull request.
 
-5. Optionally, explore the `code/` directory for starter code or scripts.
+## Recursos adicionales
 
-6. Once you've completed the exercise, you can compare your solution with the one provided in the `solution/` directory.
+- [Documentación oficial de Kubernetes](https://kubernetes.io/docs/)
+- [Documentación oficial de Terraform](https://developer.hashicorp.com/terraform/docs)
+- [Documentación oficial de Jenkins](https://www.jenkins.io/doc/)
+- [Documentación oficial de Docker](https://docs.docker.com/)
+- [Documentación oficial de ArgoCD](https://argo-cd.readthedocs.io/)
 
-## Contributing
+---
 
-Contributions to improve existing exercises or add new exercises are welcome! If you have an idea for an exercise or spot an issue with an existing one, feel free to open an issue or submit a pull request.
-
-## License
-
-This repository is licensed under the [MIT License](LICENSE).
+Este repositorio es un recurso de aprendizaje y práctica en DevOps. ¡Explora, experimenta y sigue aprendiendo!
